@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Admin</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+       <div>
+        <div class="theme-changer">
+          <button id="theme-toggle" class="theme-btn"> 
+            <span class="light-icon">⚪</span>
+            <span class="dark-icon">🌙</span>
+          
+        </div>
+       </div>
+
+
+       <!---- Color picker ----->
+<div class="color-picker">
+
+    <div class="custom-color">
+        <input type="color" class="input" id="one" value = "white">
+        <button id="two " class="button" onclick="onclick()"> Change</button>
+    </div>
+</div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">  STORE  </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank"> Dashboard</a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank"> Products</a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">Categories </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank"> Customers  </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">Inventory</a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">Settings</a>
+          </li>
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <h2> SALES</h2>
+        </div>
+
+        <div class="main-cards">
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>PRODUCTS</h3>
+              <span class="material-icons-outlined">inventory_2</span>
+            </div>
+            
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>CATEGORIES</h3>
+              <span class="material-icons-outlined">category</span>
+            </div>
+            
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>CUSTOMERS</h3>
+              <span class="material-icons-outlined">groups</span>
+            </div>
+            
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>ALERTS</h3>
+              <span class="material-icons-outlined">notification_important</span>
+            </div>
+        
+          </div>
+
+        </div>
+
+        </div>
+      </main>
+      <!-- End Main -->
+
+    </div>
+
+    <!-- Scripts -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
